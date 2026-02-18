@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+User Dashboard
+A React-based user management dashboard application that provides authentication, user listing, and detailed user insights through a clean and intuitive interface.
+________________________________________
+Pages Overview
+Login Page
+A simple and secure authentication interface with built-in validation.
+Features
+    •	Username and password input fields
+    •	Client-side form validation with error messages
+    •	Loading indicator during authentication
+    •	Redirects to the dashboard upon successful login
+    •	Session persistence using localStorage
+    
+________________________________________
+Dashboard Page
+The core user management interface featuring an interactive and scalable data table.
+Features
+    •	Search
+    Search users by name, email, or company with debounced input for performance optimization
+    •	Sorting
+    Clickable column headers to sort by:
+    o	Name
+    o	Email
+    o	Company
+    (Ascending / Descending order)
+    •	Pagination
+    o	Navigate through users efficiently
+    o	Configurable page sizes: 5, 10, 25
+    •	User Selection
+    o	Select individual users using checkboxes
+    o	Select or deselect all users at once
+    •	Loading State
+    o	Displays a spinner while fetching user data
+    •	Error Handling
+    o	User-friendly error messages
+    o	Retry option for failed API calls 
+________________________________________
+User Detail Page
+A comprehensive view of an individual user's profile and activity.
+Features
+    •	User Profile Card
+    o	Avatar
+    o	Name & Username
+    o	Email, Phone, Website
+    •	Company Information
+    o	Company name
+    o	Catchphrase
+    o	Business type
+    •	Address Details
+    o	Street, Suite, City, Zipcode
+    o	Geo coordinates (latitude & longitude)
+    •	Recent Posts
+    o	Displays up to 5 recent posts by the user
+    •	User Selection
+    o	Toggle user selection directly from the detail page
+    •	Navigation
+    o	Back button for easy return to the dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
