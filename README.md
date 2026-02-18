@@ -48,7 +48,6 @@ Features
     o	Business type
     •	Address Details
     o	Street, Suite, City, Zipcode
-    o	Geo coordinates (latitude & longitude)
     •	Recent Posts
     o	Displays up to 5 recent posts by the user
     •	User Selection
